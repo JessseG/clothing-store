@@ -1,0 +1,49 @@
+.product-box {
+  /* border: 1px solid darkgray; */
+  border: none;
+  border-radius: 3.5px;
+  display: inline-block;
+  padding: 2vh;
+  text-align: center;
+  margin: 1.5vh;
+  background: rgb(221, 221, 221);
+  /* background: aliceblue; */
+  /* background-color: white; */
+  transition: all 0.15s ease-in-out;
+}
+
+.product-box:hover {
+  transform: scale(1.15);
+  z-index: 300;
+  -webkit-transform: translateZ(1.15);
+}
+
+.product-sample {
+  width: 12.8vw;
+  height: 28vh;
+  margin: auto;
+  margin-bottom: 1.7vh;
+  display: block;
+  cursor: pointer;
+}
+
+.product-label {
+  display: inline-block;
+  margin: 0;
+  margin-right: auto;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 16.5px;
+  cursor: pointer;
+}
+
+.product-price {
+  display: inline-block;
+  margin: 0;
+  margin-left: auto;
+  color: black;
+  font-weight: 650;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: 5%;
+}
