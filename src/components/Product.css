@@ -36,9 +36,24 @@
   cursor: pointer;
 }
 
-.price-box {
-  margin: 2vh 0 4vh 3vw;
+.info-box-wrap {
+  margin-top: 5vh;
+}
+
+.info-box {
+  margin: 2vh 0 3vh 5.5vw;
   /* border: 1px solid red; */
+}
+
+.size {
+  padding: 0.5vh;
+  background: rgba(238, 238, 238, 0.87);
+  margin-left: 1vw;
+  border-radius: 0.5vh;
+  outline: none;
+  /* font-weight: 500; */
+  font-size: 16px;
+  /* border: none; */
 }
 
 .selected-product-labels {
@@ -51,17 +66,12 @@
   /* cursor: pointer; */
 }
 
-.description-box {
-  margin: 2vh 0 0 3vw;
-  /* border: 1px solid red; */
-}
-
 .selected-product-info {
   display: inline-block;
   margin: 0;
   /* margin-right: auto; */
   color: darkslateblue;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
   /* cursor: pointer; */
 }

@@ -3,7 +3,7 @@
   border: none;
   border-radius: 3.5px;
   display: inline-block;
-  padding: 2vh;
+  padding: 1vh;
   text-align: center;
   margin: 1.5vh;
   background: rgb(221, 221, 221);
@@ -19,8 +19,8 @@
 }
 
 .product-sample {
-  width: 12.8vw;
-  height: 28vh;
+  width: 13.5vw; /* 12.8 */
+  height: 27vh; /* 28*/
   margin: auto;
   margin-bottom: 1.7vh;
   display: block;

@@ -26,21 +26,38 @@ const Product = (props) => {
           </div>
           <div className="column" id="column-2">
             <h1 className="selected-product-title">{product.name}</h1>
-            <div className="price-box">
-              <h3 href="" className="selected-product-labels">
-                Price:
+            <div className="info-box-wrap">
+              <div className="info-box">
+                <h3 href="" className="selected-product-labels">
+                  Price:
               </h3>
-              <p href="" className="selected-product-info">
-                &nbsp;&nbsp; ${product.price}
-              </p>
-            </div>
-            <div className="description-box">
-              <h3 href="" className="selected-product-labels">
-                Description:
+                <p href="" className="selected-product-info">
+                  &nbsp;&nbsp; ${product.price}
+                </p>
+              </div>
+              <div className="info-box">
+                <h3 href="" className="selected-product-labels">
+                  Size:
               </h3>
-              <p href="" className="selected-product-info">
-                &nbsp;&nbsp; {product.description}
-              </p>
+                <select className="size" name="" id="">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+              {/* <div>
+              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="" />
+            </div> */}
+              <div className="info-box">
+                <h3 href="" className="selected-product-labels">
+                  Description:
+              </h3>
+                <p href="" className="selected-product-info">
+                  &nbsp;&nbsp; {product.description}
+                </p>
+              </div>
             </div>
           </div>
           <div className="column" id="column-3"></div>
