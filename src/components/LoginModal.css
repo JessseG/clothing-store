@@ -1,0 +1,23 @@
+.loginModal {
+  margin: 0 auto;
+  padding: 2vh 4vh;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: aliceblue;
+  z-index: 300;
+  /* top: 35%; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  position: absolute;
+}
+
+.loginModal h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+  /* border: 1px solid red; */
+}
+
+.loginBox {
+  margin: 1vh 0;
+}

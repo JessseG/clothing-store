@@ -44,7 +44,9 @@ const Header = (props) => {
       </form>
       {/* </div> */}
       <div className="account-options">
-        <button className="sign-in-btn">Sign in</button>
+        <button className="sign-in-btn" onClick={props.signIn}>
+          Sign in
+        </button>
         <button className="shopping-cart-btn">
           <img className="shopping-cart-icon" src={cart} alt="shopping cart" />
         </button>

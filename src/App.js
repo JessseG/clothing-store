@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Catalog from "./components/Catalog";
 import Product from "./components/Product";
+import LoginModal from "./components/LoginModal";
 import btc from "./components/images/bitcoin-sunset-black.png";
 import btc2 from "./components/images/its_a_bubble.png";
 import btc3 from "./components/images/bitcoin-astronaut-og.png";
@@ -32,6 +33,7 @@ import { v4 as uuid } from "uuid";
 
 function App() {
   const [search, changeSearch] = useState("");
+  const [loginModal, setLoginModal] = useState("hidden");
 
   const catalog = [
     {
@@ -220,14 +222,27 @@ function App() {
     },
   ];
 
+  const loginModalHandler = () => {
+    let modal = document.getElementById("loginModal");
+    if (modal.style.visibility === "visible") {
+      document.getElementById("loginModal").style.visibility = "hidden";
+    } else {
+      document.getElementById("loginModal").style.visibility = "visible";
+    }
+  };
+
   return (
     <Router>
       <div className="App">
         <header>
-          <Header changeSearch={(newSearch) => changeSearch(newSearch)} />
+          <Header
+            changeSearch={(newSearch) => changeSearch(newSearch)}
+            signIn={loginModalHandler}
+          />
         </header>
         <div className="body">
           {/* <h2>{search}</h2> */}
+          <LoginModal />
           <Switch>
             <Route path="/" exact>
               <Catalog products={catalog} search={search} />
