@@ -1,0 +1,60 @@
+.cart-title {
+  margin-top: 3vh;
+}
+
+.cart {
+  margin-top: 4vh;
+}
+
+.item-card {
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.cart-item-image {
+  /* display: inline-block; */
+  height: 12vh;
+  width: 12vh;
+}
+
+.item-name {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 45%;
+  margin-left: 5%;
+  line-height: 100%;
+  font-size: 2.1vh;
+  font-weight: 450;
+}
+
+.item-quantity {
+  position: absolute;
+  top: 45%;
+  margin-left: 55%;
+  line-height: 100%;
+  font-size: 2vh;
+  font-weight: 450;
+}
+
+.item-price {
+  position: absolute;
+  top: 45%;
+  margin-left: 75%;
+  line-height: 100%;
+  font-size: 2vh;
+  font-weight: 450;
+}
+
+.purchase-btn {
+  float: right;
+  margin-top: 2vh;
+  padding: 0.8vh;
+  padding-top: 0.4vh;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.6vh;
+}

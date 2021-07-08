@@ -65,6 +65,7 @@
 }
 
 .account-options {
+  /* border: 1px solid yellowgreen; */
   margin: auto 0;
   display: inline-block;
   margin-right: 3vw;
@@ -84,7 +85,8 @@
   font-size: 15.3px;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
-  vertical-align: 35%;
+  transform: translateY(30%);
+  /* vertical-align: 35%; */
   /* padding: 0; */
   /* height: 10px; */
 }
@@ -102,9 +104,14 @@
   cursor: pointer;
 }
 
+.ui-cart {
+  transform: translateY(10%);
+}
+
 .shopping-cart-icon {
   height: 30px;
   width: 35px;
+  /* color: white; */
   filter: invert(1);
   vertical-align: -20%;
   transition: all 0.15s ease-in-out;

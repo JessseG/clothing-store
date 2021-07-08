@@ -22,7 +22,8 @@
 }
 
 .selected-product-title {
-  margin: 2vh 0 3.5vh 3vw;
+  margin: 2.5vh 0 3.5vh 3vw;
+  font-size: 3.5vh;
   /* border: 1px solid red; */
   color: rgb(29, 29, 29);
 }
@@ -38,11 +39,21 @@
 
 .info-box-wrap {
   margin-top: 5vh;
+  /* border: 3px solid white; */
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: 53vh;
+  max-width: 40vw;
 }
 
 .info-box {
   margin: 2vh 0 3vh 5.5vw;
   /* border: 1px solid red; */
+}
+
+#description-box {
+  margin-top: 0.5vh;
 }
 
 .size {
@@ -66,6 +77,14 @@
   /* cursor: pointer; */
 }
 
+#size-label {
+  margin-bottom: 1vh;
+}
+
+#description-label {
+  margin-bottom: 1vh;
+}
+
 .selected-product-info {
   display: inline-block;
   margin: 0;
@@ -74,4 +93,50 @@
   font-weight: 500;
   font-size: 18px;
   /* cursor: pointer; */
+}
+
+#description-content {
+  margin-left: 0.3vh;
+}
+
+#purchase-btn-box {
+  margin-bottom: 2vh;
+  /* border: 1px solid red; */
+  /* position: absolute; */
+  margin-top: auto;
+}
+
+.purchase-btn {
+  padding: 0.8vh;
+  padding-top: 0.4vh;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.6vh;
+}
+
+#buy-now-btn {
+  background-color: rgb(255, 219, 17);
+  border: 1.4px solid rgb(66, 66, 66);
+  border-radius: 0.3vh;
+}
+
+#buy-now-btn:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 100px 100px rgb(255, 226, 58);
+}
+
+#add-cart-btn {
+  margin-left: 1vw;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 0.3vh;
+  transition: all 0.15s ease-in-out;
+}
+
+#add-cart-btn:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 100px 100px rgb(255, 172, 17);
 }
