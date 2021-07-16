@@ -13,6 +13,9 @@ import btc from "./components/images/bitcoin-sunset-black.png";
 import btc2 from "./components/images/its_a_bubble.png";
 import btc3 from "./components/images/bitcoin-astronaut-og.png";
 import btc4 from "./components/images/bitcoin-astronaut-og-2.png";
+import fkelon from "./components/images/fuck_elon_shirt.png";
+import cryptopath from "./components/images/cryptopath-shirt.png";
+// import btc_white from "./components/images/white-bitcoin-shirt.png";
 import eth from "./components/images/ethereum-simple-black-blue-logo.png";
 import eth2 from "./components/images/ethereum-blue-white.png";
 import eth3 from "./components/images/ethereum-gray.png";
@@ -57,6 +60,20 @@ function App() {
     setCart(item.cart);
   };
 
+  const handleUpdateCartQty = async (productId, quantity) => {
+    const { cart } = await commerce.cart.update(productId, { quantity });
+    setCart(cart);
+  };
+
+  const handleRemoveFromCart = async (productId) => {
+    const { cart } = await commerce.cart.remove(productId);
+    setCart(cart);
+  };
+
+  const handleEmptyCart = async (productId) => {
+    const { cart } = await commerce.cart.empty();
+  };
+
   useEffect(() => {
     fetchProducts();
     fetchCart();
@@ -96,13 +113,29 @@ function App() {
     {
       id: 4,
       type: "shirt",
+      name: "Cryptopath Black",
+      size: ["small", "medium", "large"],
+      image: cryptopath,
+      price: 22.99,
+    },
+    {
+      id: 5,
+      type: "shirt",
+      name: "Fuck Elon Shirt",
+      size: ["small", "medium", "large"],
+      image: fkelon,
+      price: 22.99,
+    },
+    {
+      id: 6,
+      type: "shirt",
       name: "Ethereum Black",
       size: ["small", "medium", "large"],
       image: eth,
       price: 22.99,
     },
     {
-      id: 5,
+      id: 7,
       type: "shirt",
       name: "Bitcoin Sunset",
       size: ["small", "medium", "large"],
@@ -110,7 +143,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 6,
+      id: 8,
       type: "shirt",
       name: "Cardano Black",
       size: ["small", "medium", "large"],
@@ -118,7 +151,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 7,
+      id: 9,
       type: "shirt",
       name: "Ethereum Blue",
       size: ["small", "medium", "large"],
@@ -126,7 +159,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 8,
+      id: 10,
       type: "shirt",
       name: "Cardano Hoodie",
       size: ["small", "medium", "large"],
@@ -134,7 +167,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 9,
+      id: 11,
       type: "shirt",
       name: "Bitcoin Bubble",
       size: ["small", "medium", "large"],
@@ -142,7 +175,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 10,
+      id: 12,
       type: "shirt",
       name: "Cardano Astronaut",
       size: ["small", "medium", "large"],
@@ -150,7 +183,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 11,
+      id: 13,
       type: "shirt",
       name: "Ethereum White",
       size: ["small", "medium", "large"],
@@ -158,7 +191,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 12,
+      id: 14,
       type: "shirt",
       name: "Theta Orange",
       size: ["small", "medium", "large"],
@@ -166,7 +199,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 13,
+      id: 15,
       type: "shirt",
       name: "Monero Solid",
       size: ["small", "medium", "large"],
@@ -174,7 +207,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 14,
+      id: 16,
       type: "shirt",
       name: "Ethereum Light",
       size: ["small", "medium", "large"],
@@ -182,7 +215,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 15,
+      id: 17,
       type: "shirt",
       name: "Ethereum Gray",
       size: ["small", "medium", "large"],
@@ -190,7 +223,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 16,
+      id: 18,
       type: "shirt",
       name: "Hex Black",
       size: ["small", "medium", "large"],
@@ -198,7 +231,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 17,
+      id: 19,
       type: "shirt",
       name: "Monero Mountain",
       size: ["small", "medium", "large"],
@@ -206,7 +239,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 18,
+      id: 20,
       type: "shirt",
       name: "Hex Blue",
       size: ["small", "medium", "large"],
@@ -214,7 +247,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 19,
+      id: 21,
       type: "shirt",
       name: "Theta Original",
       size: ["small", "medium", "large"],
@@ -222,7 +255,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 22.99,
+      id: 22,
       type: "shirt",
       name: "VeChain Black",
       size: ["small", "medium", "large"],
@@ -230,7 +263,7 @@ function App() {
       price: 22.99,
     },
     {
-      id: 21,
+      id: 23,
       type: "shirt",
       name: "VeChain White",
       size: ["small", "medium", "large"],
@@ -238,22 +271,22 @@ function App() {
       price: 22.99,
     },
     {
-      id: 22,
+      id: 24,
       type: "shirt",
       name: "Sol Black",
       size: ["small", "medium", "large"],
       image: sol2,
       price: 22.99,
     },
-    {
-      id: 23,
-      type: "shirt",
-      name: "Sol White",
-      size: ["small", "medium", "large"],
-      image: sol1,
-      price: 22.99,
-    },
   ];
+  // {
+  //   id: 25,
+  //   type: "shirt",
+  //   name: "Sol White",
+  //   size: ["small", "medium", "large"],
+  //   image: sol1,
+  //   price: 22.99,
+  // },
 
   const loginModalHandler = () => {
     let modal = document.getElementById("loginModal");
@@ -283,7 +316,12 @@ function App() {
               {/* <Cart cart={cart} /> */}
             </Route>
             <Route path="/cart">
-              <Cart cart={cart} />
+              <Cart
+                cart={cart}
+                updateCartQty={handleUpdateCartQty}
+                removeFromCart={handleRemoveFromCart}
+                emptyCart={handleEmptyCart}
+              />
             </Route>
             <Route path="/:id">
               <Product
