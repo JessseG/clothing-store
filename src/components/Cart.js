@@ -2,7 +2,8 @@ import React from "react";
 import "./Cart.css";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
 import useStyles from "./styles/CartStyles";
-import deletez from "./images/delete-icon.png";
+import { Link, useHistory } from "react-router-dom";
+import delt from "./images/delete-icon.png";
 
 function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
   //   console.log(!cart.line_items.length);
@@ -49,7 +50,7 @@ function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
                   +
                 </button>
               </span>
-              {/* <img src={deletez} alt="" className="delete-item-icon" /> */}
+              {/* <img src={delt} alt="" className="delete-item-icon" /> */}
               <button
                 className="delete-btn"
                 onClick={() => removeFromCart(item.id)}
@@ -63,9 +64,15 @@ function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
           </div>
         ))}
       </div>
-      <button className="purchase-btn" id="checkout-btn" arial-label="Checkout">
-        Checkout
-      </button>
+      <Link to={`./checkout`}>
+        <button
+          className="purchase-btn"
+          id="checkout-btn"
+          arial-label="Checkout"
+        >
+          Checkout
+        </button>
+      </Link>
     </>
   );
 

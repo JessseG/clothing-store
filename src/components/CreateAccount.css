@@ -1,0 +1,24 @@
+.create-account-form {
+  width: 40%;
+  background: whitesmoke;
+  /* text-align: center; */
+  margin: auto;
+  border-radius: 5px;
+  padding: 1vh;
+}
+
+.create-account-form input {
+  margin-bottom: 1.5vh;
+}
+
+.create-account-form h2 {
+  margin-bottom: 3vh;
+}
+
+.form-left {
+  /* align-items: left; */
+}
+
+.form-right {
+  /* align-items: right; */
+}

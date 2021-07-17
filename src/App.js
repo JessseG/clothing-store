@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import Catalog from "./components/Catalog";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
+import CreateAccount from "./components/CreateAccount";
 import LoginModal from "./components/LoginModal";
 import btc from "./components/images/bitcoin-sunset-black.png";
 import btc2 from "./components/images/its_a_bubble.png";
@@ -322,6 +324,12 @@ function App() {
                 removeFromCart={handleRemoveFromCart}
                 emptyCart={handleEmptyCart}
               />
+            </Route>
+            <Route path="/checkout" exact>
+              <Checkout products={catalog} search={search} />
+            </Route>
+            <Route path="/create_account" exact>
+              <CreateAccount products={catalog} search={search} />
             </Route>
             <Route path="/:id">
               <Product
