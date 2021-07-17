@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Catalog from "./components/Catalog";
 import Product from "./components/Product";
+import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 import btc from "./components/images/bitcoin-sunset-black.png";
 import btc2 from "./components/images/its_a_bubble.png";
 import btc3 from "./components/images/bitcoin-astronaut-og.png";
@@ -29,6 +31,7 @@ import sol2 from "./components/images/sol_shirt_black.png";
 import vchain1 from "./components/images/vchain_shirt_black.png";
 import vchain2 from "./components/images/vchain_shirt_white.png";
 import { v4 as uuid } from "uuid";
+import CreateAccount from "./components/CreateAccount";
 
 function App() {
   const [search, changeSearch] = useState("");
@@ -231,6 +234,15 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Catalog products={catalog} search={search} />
+            </Route>
+            <Route path="/cart" exact>
+              <Cart products={catalog} search={search} />
+            </Route>
+            <Route path="/checkout" exact>
+              <Checkout products={catalog} search={search} />
+            </Route>
+            <Route path="/create_account" exact>
+              <CreateAccount products={catalog} search={search} />
             </Route>
             <Route path="/:id">
               <Product products={catalog} search={search} />
