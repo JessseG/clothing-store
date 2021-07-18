@@ -5,10 +5,13 @@ import cart from "./images/shopping-cart.png";
 import "../App.css";
 import "./Header.css";
 import { Link, useHistory } from "react-router-dom";
+import { Badge, IconButton } from "@material-ui/core";
+import { ShoppingCart } from "@material-ui/icons";
 
-const Header = (props) => {
+const Header = ({ changeSearch, signIn, cart }) => {
   // const [search, setSearch] = useState("");
 
+  console.log(cart.id);
   const history = useHistory();
 
   // const goHome = () => {
@@ -35,7 +38,7 @@ const Header = (props) => {
           name=""
           id="search-input"
           onChange={(e) => {
-            props.changeSearch(e.target.value);
+            changeSearch(e.target.value);
           }}
         />
         <button type="submit" className="search-icon-btn">
@@ -44,12 +47,19 @@ const Header = (props) => {
       </form>
       {/* </div> */}
       <div className="account-options">
-        <button className="sign-in-btn">Sign in</button>
-        <Link to={`/cart`}>
-          <button className="shopping-cart-btn">
-            <img className="shopping-cart-icon" src={cart} alt="shopping cart" />
-          </button>
+        <button className="sign-in-btn" onClick={signIn}>
+          Sign in
+        </button>
+        {/* <button className="shopping-cart-btn"> */}
+        {/* <img className="shopping-cart-icon" src={cart} alt="shopping cart" /> */}
+        <Link to="/cart" key={cart.id} className="shopping-cart-icon">
+          <IconButton aria-label="Show cart items" color="inherit">
+            <Badge badgeContent={cart.total_items} color="secondary">
+              <ShoppingCart />
+            </Badge>
+          </IconButton>
         </Link>
+        {/* </button> */}
       </div>
     </div>
   );

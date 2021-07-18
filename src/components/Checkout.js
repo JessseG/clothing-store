@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Checkout.css";
 import { Link, useHistory } from "react-router-dom";
 
@@ -12,8 +12,8 @@ const Checkout = ({ cart }) => {
             <Link to={`/create_account`}>
                 <button id="create-account">Create Account</button>
             </Link>
-        </div >
+        </div>
     );
-}
+};
 
 export default Checkout;

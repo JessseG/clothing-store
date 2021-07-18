@@ -1,0 +1,154 @@
+.cart-title {
+  margin-top: 3vh;
+}
+
+.cart {
+  margin-top: 4vh;
+}
+
+.item-card {
+  border: 1px solid black;
+  position: relative;
+  height: 100%;
+}
+
+.cart-item-image {
+  /* display: inline-block; */
+  height: 12vh;
+  width: 12vh;
+  cursor: pointer;
+}
+
+.item-name {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  line-height: 100%;
+  font-size: 2.1vh;
+  font-weight: 450;
+}
+
+.item-quantity {
+  position: absolute;
+  top: 43%;
+  right: 28%;
+  line-height: 100%;
+  font-size: 20px;
+  font-weight: 450;
+  background: white;
+  padding: 0;
+  min-width: 6.3%;
+  border-radius: 5px;
+  text-align: center;
+  border: 0.3px solid gray;
+  /* text-align: right; */
+}
+
+#item-amount {
+  display: inline-block;
+  min-width: 33px;
+  /* border: 1px solid red; */
+}
+
+.change-quantity {
+  opacity: 55%;
+}
+
+.change-quantity:hover {
+  opacity: 100%;
+}
+
+#increase-quantity {
+  padding: 5px 7.6px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  background: rgb(184, 184, 184);
+  font-weight: 650;
+  margin: 0;
+  transform: translateY(-2%);
+  cursor: pointer;
+  border: none;
+  /* border: 1px solid gray; */
+  border-radius: 3.5px;
+}
+
+#decrease-quantity {
+  padding: 5px 7.6px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  background: rgb(184, 184, 184);
+  font-weight: 650;
+  margin: 0;
+  transform: translateY(-2%);
+  cursor: pointer;
+  border: none;
+  /* border: 1px solid gray; */
+  border-radius: 3.5px;
+}
+
+/* #change-quantity::-webkit-inner-spin-button,
+#change-quantity::-webkit-outer-spin-button {
+  min-width: auto;
+  color: red;
+  opacity: 1;
+  cursor: pointer;
+} */
+
+.delete-item-icon {
+  height: 2vh;
+  width: 2.1vh;
+  position: absolute;
+  top: 43%;
+  right: 24%;
+  line-height: 100%;
+  background: white;
+  padding: 2px;
+  padding-bottom: 2.5px;
+  border: 0.3px solid gray;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  /* display: inline-block; */
+  position: absolute;
+  top: 42%;
+  right: 21.5%;
+  line-height: 100%;
+  color: white;
+  background-color: rgba(218, 18, 18, 0.979);
+  cursor: pointer;
+  border: 0.6px solid rgb(153, 153, 153);
+  padding: 7px;
+  border-radius: 4.4px;
+  /* font-weight: 600; */
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  opacity: 88%;
+}
+
+.delete-btn:hover {
+  opacity: 100%;
+}
+
+.item-price {
+  position: absolute;
+  top: 45%;
+  right: 7%;
+  line-height: 100%;
+  font-size: 2vh;
+  font-weight: 450;
+}
+
+.purchase-btn {
+  float: right;
+  margin-top: 2vh;
+  padding: 0.8vh;
+  padding-top: 0.4vh;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.6vh;
+}
