@@ -1,9 +1,9 @@
 import React from "react";
 import "./Cart.css";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
-import useStyles from "./styles/CartStyles";
+import useStyles from "./CartStyles";
 import { Link, useHistory } from "react-router-dom";
-import delt from "./images/delete-icon.png";
+import delt from "../images/delete-icon.png";
 
 function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
   //   console.log(!cart.line_items.length);
