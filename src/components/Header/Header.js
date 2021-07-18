@@ -1,8 +1,8 @@
 import React from "react";
-import options from "./images/options.png";
-import searchIcon from "./images/search.png";
-import cart from "./images/shopping-cart.png";
-import "../App.css";
+import options from "../images/options.png";
+import searchIcon from "../images/search.png";
+import cart from "../images/shopping-cart.png";
+// import "../App.css";
 import "./Header.css";
 import { Link, useHistory } from "react-router-dom";
 import { Badge, IconButton } from "@material-ui/core";

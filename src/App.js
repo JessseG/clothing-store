@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { commerce } from "./lib/commerce";
 // import { Header, Catalog, Product, LoginModal } from "./components";
-import Header from "./components/Header";
-import Catalog from "./components/Catalog";
-import Product from "./components/Product";
-import Cart from "./components/Cart";
-import Checkout from "./components/Checkout";
+import Header from "./components/Header/Header";
+import Catalog from "./components/Catalog/Catalog";
+import Product from "./components/Product/Product";
+import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 import CreateAccount from "./components/CreateAccount";
-import LoginModal from "./components/LoginModal";
+import LoginModal from "./components/LoginModal/LoginModal";
 import btc from "./components/images/bitcoin-sunset-black.png";
 import btc2 from "./components/images/its_a_bubble.png";
 import btc3 from "./components/images/bitcoin-astronaut-og.png";
@@ -326,10 +326,10 @@ function App() {
               />
             </Route>
             <Route path="/checkout" exact>
-              <Checkout products={catalog} search={search} />
+              <Checkout cart={cart} />
             </Route>
             <Route path="/create_account" exact>
-              <CreateAccount products={catalog} search={search} />
+              <CreateAccount />
             </Route>
             <Route path="/cart" exact>
               <Cart products={catalog} search={search} />
