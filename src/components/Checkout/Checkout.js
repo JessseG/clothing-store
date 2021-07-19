@@ -43,8 +43,8 @@ const Checkout = ({ cart }) => {
     activeStep === 0 ? (
       <AddressForm checkoutToken={checkoutToken} />
     ) : (
-        <PaymentForm />
-      );
+      <PaymentForm />
+    );
 
   return (
     <>
@@ -64,8 +64,8 @@ const Checkout = ({ cart }) => {
             {activeStep === steps.length ? (
               <Confirmation />
             ) : (
-                checkoutToken && <Form />
-              )}
+              checkoutToken && <Form />
+            )}
             <br />
             <Link to={`/`}>
               <button>Place Order</button>
