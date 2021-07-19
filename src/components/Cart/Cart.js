@@ -7,7 +7,7 @@ import delt from "../images/delete-icon.png";
 
 function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
     //   console.log(!cart.line_items.length);
-    console.log(cart);
+    // console.log(cart);
     const isEmpty = cart.line_items === undefined;
     const classes = useStyles();
 
@@ -39,7 +39,7 @@ function Cart({ cart, updateCartQty, removeFromCart, emptyCart }) {
                                 >
                                     –
                 </button>
-                                <a id="item-amount" href>
+                                <a id="item-amount" >
                                     {item.quantity}
                                 </a>
                                 <button

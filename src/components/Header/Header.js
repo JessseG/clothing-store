@@ -11,7 +11,7 @@ import { ShoppingCart } from "@material-ui/icons";
 const Header = ({ changeSearch, signIn, cart }) => {
   // const [search, setSearch] = useState("");
 
-  console.log(cart.id);
+  // console.log(cart.id);
   const history = useHistory();
 
   // const goHome = () => {
