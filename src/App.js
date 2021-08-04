@@ -45,7 +45,9 @@ function App() {
   const [search, changeSearch] = useState("");
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [order, setOrder] = useState({});
   // const [loginModal, setLoginModal] = useState("hidden");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -74,6 +76,26 @@ function App() {
 
   const handleEmptyCart = async (productId) => {
     const { cart } = await commerce.cart.empty();
+  };
+
+  const refreshCart = async () => {
+    const newCart = await commerce.cart.refresh();
+
+    setCart(newCart);
+  };
+
+  const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+    try {
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutTokenId,
+        newOrder
+      );
+
+      setOrder(incomingOrder);
+      refreshCart();
+    } catch (error) {
+      setErrorMessage(error.data.error.message);
+    }
   };
 
   useEffect(() => {
@@ -335,7 +357,14 @@ function App() {
               <Cart products={catalog} search={search} />
             </Route>
             <Route path="/checkout" exact>
-              <Checkout products={catalog} search={search} />
+              <Checkout
+                products={catalog}
+                search={search}
+                cart={cart}
+                order={order}
+                onCaptureCheckout={handleCaptureCheckout}
+                error={errorMessage}
+              />
             </Route>
             <Route path="/create_account" exact>
               <CreateAccount products={catalog} search={search} />
