@@ -44,7 +44,8 @@
   display: flex;
   flex-flow: column;
   height: 53vh;
-  max-width: 40vw;
+  width: 40vw;
+  /* border: 0.5px solid red; */
 }
 
 .info-box {
@@ -54,6 +55,7 @@
 
 #description-box {
   margin-top: 0.5vh;
+  /* border: 0.5px solid red; */
 }
 
 .size {
@@ -97,6 +99,7 @@
 
 #description-content {
   margin-left: 0.3vh;
+  min-width: 90%;
 }
 
 #purchase-btn-box {
@@ -104,6 +107,7 @@
   /* border: 1px solid red; */
   /* position: absolute; */
   margin-top: auto;
+  transform: translateX(-25%);
 }
 
 .purchase-btn {
@@ -121,6 +125,7 @@
   background-color: rgb(255, 219, 17);
   border: 1.4px solid rgb(66, 66, 66);
   border-radius: 0.3vh;
+  margin-left: 0.8vh;
 }
 
 #buy-now-btn:hover {

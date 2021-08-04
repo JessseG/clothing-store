@@ -36,7 +36,7 @@ const Product = ({ catalog, search, onAddToCart, products }) => {
               </div>
             </div>
           </div>
-          <div className="column" id="column-2">
+          <div>
             <h1 className="selected-product-title">{product.name}</h1>
             <div className="info-box-wrap">
               <div className="info-box">
@@ -78,7 +78,7 @@ const Product = ({ catalog, search, onAddToCart, products }) => {
                   {product.description}
                 </p>
               </div>
-              <div className="info-box" id="purchase-btn-box">
+              <div id="purchase-btn-box">
                 <button className="purchase-btn" id="buy-now-btn">
                   Buy Now
                 </button>

@@ -115,8 +115,8 @@ function App() {
       size: ["small", "medium", "large"],
       image: btc4,
       description:
-        "Original CoinBlock design. Attempts to show the popular astronaut reaching for a bitcoin as it floats up. This one was deisgned by Michael G, symbolizing the rising price of Bitcoin while the astronaut tries to reach up for it before it floats up.",
-      price: 22.99,
+        "Original design. Attempts to show the popular astronaut reaching for a bitcoin as it floats up, resembling the price action that people miss until its already moving up",
+      price: 15.0,
     },
     {
       id: 2,
@@ -124,7 +124,9 @@ function App() {
       name: "Ether Blue Diamond",
       size: ["small", "medium", "large"],
       image: eth8,
-      price: 22.99,
+      description:
+        "Original design. Simple & subtle aqua blue Ethereum logo. Perfect for those who like shirts with a cool but simple design. Goes great with a pair of blue jeans",
+      price: 15.0,
     },
     {
       id: 3,
@@ -132,7 +134,7 @@ function App() {
       name: "Monero Classic",
       size: ["small", "medium", "large"],
       image: xmr,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 4,
@@ -140,7 +142,7 @@ function App() {
       name: "Cryptopath Black",
       size: ["small", "medium", "large"],
       image: cryptopath,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 5,
@@ -148,7 +150,7 @@ function App() {
       name: "Fuck Elon Shirt",
       size: ["small", "medium", "large"],
       image: fkelon,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 6,
@@ -156,7 +158,7 @@ function App() {
       name: "Ethereum Black",
       size: ["small", "medium", "large"],
       image: eth,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 7,
@@ -164,7 +166,7 @@ function App() {
       name: "Bitcoin Sunset",
       size: ["small", "medium", "large"],
       image: btc,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 8,
@@ -172,7 +174,7 @@ function App() {
       name: "Cardano Black",
       size: ["small", "medium", "large"],
       image: ada,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 9,
@@ -180,7 +182,7 @@ function App() {
       name: "Ethereum Blue",
       size: ["small", "medium", "large"],
       image: eth4,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 10,
@@ -188,7 +190,7 @@ function App() {
       name: "Cardano Hoodie",
       size: ["small", "medium", "large"],
       image: ada3,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 11,
@@ -196,7 +198,7 @@ function App() {
       name: "Bitcoin Bubble",
       size: ["small", "medium", "large"],
       image: btc2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 12,
@@ -204,7 +206,7 @@ function App() {
       name: "Cardano Astronaut",
       size: ["small", "medium", "large"],
       image: ada2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 13,
@@ -212,7 +214,7 @@ function App() {
       name: "Ethereum White",
       size: ["small", "medium", "large"],
       image: eth6,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 14,
@@ -220,7 +222,7 @@ function App() {
       name: "Theta Orange",
       size: ["small", "medium", "large"],
       image: theta,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 15,
@@ -228,7 +230,7 @@ function App() {
       name: "Monero Solid",
       size: ["small", "medium", "large"],
       image: xmr2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 16,
@@ -236,7 +238,7 @@ function App() {
       name: "Ethereum Light",
       size: ["small", "medium", "large"],
       image: eth2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 17,
@@ -244,7 +246,7 @@ function App() {
       name: "Ethereum Gray",
       size: ["small", "medium", "large"],
       image: eth3,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 18,
@@ -252,7 +254,7 @@ function App() {
       name: "Hex Black",
       size: ["small", "medium", "large"],
       image: hex1,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 19,
@@ -260,7 +262,7 @@ function App() {
       name: "Monero Mountain",
       size: ["small", "medium", "large"],
       image: xmr3,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 20,
@@ -268,7 +270,7 @@ function App() {
       name: "Hex Blue",
       size: ["small", "medium", "large"],
       image: hex2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 21,
@@ -276,7 +278,7 @@ function App() {
       name: "Theta Original",
       size: ["small", "medium", "large"],
       image: theta2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 22,
@@ -284,7 +286,7 @@ function App() {
       name: "VeChain Black",
       size: ["small", "medium", "large"],
       image: vchain1,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 23,
@@ -292,7 +294,7 @@ function App() {
       name: "VeChain White",
       size: ["small", "medium", "large"],
       image: vchain2,
-      price: 22.99,
+      price: 15.0,
     },
     {
       id: 24,
@@ -300,7 +302,7 @@ function App() {
       name: "Sol Black",
       size: ["small", "medium", "large"],
       image: sol2,
-      price: 22.99,
+      price: 15.0,
     },
   ];
   // {
@@ -309,7 +311,7 @@ function App() {
   //   name: "Sol White",
   //   size: ["small", "medium", "large"],
   //   image: sol1,
-  //   price: 22.99,
+  //   price: 15.00,
   // },
 
   const loginModalHandler = () => {
