@@ -10,7 +10,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import Review from "./Review";
 
 const stripePromise = loadStripe(
-  "pk_test_51JKDS4EyvGCMxT3tVBLMSFUfP24d5O7bWL9hL8AUoCLjZAs5haOkZEaUUlewCBXmICwa14hYjwjC63F8RBjiXjBv00TZW4dKVR"
+  "xxx"
 );
 
 const PaymentForm = ({
